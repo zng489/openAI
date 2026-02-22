@@ -1,0 +1,366 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.1.29",
+    "lastTouchedAt": "2026-01-31T02:01:52.403Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-01-31T02:01:52.399Z",
+    "lastRunVersion": "2026.1.29",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "models": {
+    "providers": {
+      "lmstudio": {
+        "baseUrl": "http://127.0.0.1:1234/v1",
+        "apiKey": "lmstudio-local",
+        "api": "openai-responses",
+        "models": [
+          {
+            "id": "tinyllama-1.1b-chat-v1.0",
+            "name": "TinyLlama 1.1B Chat (Local)",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 16000,
+            "maxTokens": 2048
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "lmstudio/tinyllama-1.1b-chat-v1.0"
+      },
+      "workspace": "/home/Ubuntu/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto"
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "bind": "loopback",
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "generate-your-token"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  }
+}
+
+
+
+
+
+{
+  "meta": {
+    "lastTouchedVersion": "2026.1.29",
+    "lastTouchedAt": "2026-01-31T02:01:52.403Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-01-31T02:01:52.399Z",
+    "lastRunVersion": "2026.1.29",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "models": {
+    "providers": {
+      "lmstudio": {
+        "baseUrl": "http://127.0.0.1:1234/v1",
+        "apiKey": "lmstudio-local",
+        "api": "openai-responses",
+        "models": [
+          {
+            "id": "gpt_4o_mini",
+            "name": "GPT-4o Mini",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 4096
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "lmstudio/gpt_4o_mini"
+      },
+      "workspace": "/home/Ubuntu/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto"
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "bind": "loopback",
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "generate-your-token"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  }
+}
+
+
+
+
+
+
+
+{
+  "meta": {
+    "lastTouchedVersion": "2026.1.29",
+    "lastTouchedAt": "2026-02-03T10:13:55.518Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-03T10:13:55.508Z",
+    "lastRunVersion": "2026.1.29",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "google:default": {
+        "provider": "google",
+        "mode": "api_key"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "google/gemini-3-pro-preview"
+      }
+    }
+  }
+}
+
+
+
+
+
+{
+  "meta": {
+    "lastTouchedVersion": "2026.1.29",
+    "lastTouchedAt": "2026-01-31T02:01:52.403Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-01-31T02:01:52.399Z",
+    "lastRunVersion": "2026.1.29",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "models": {
+    "providers": {
+      "lmstudio": {
+        "baseUrl": "http://localhost:1234/v1 ",
+        "apiKey": "lmstudio-local",
+        "api": "openai-responses",
+        "models": [
+          {
+            "id": "gpt_4o_mini",
+            "name": "gpt_4o_mini",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 4096
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "lmstudio/gpt_4o_mini"
+      },
+      "models": {
+        "lmstudio/gpt_4o_mini": {}
+      },
+      "workspace": "/home/Ubuntu/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto"
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "bind": "loopback",
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "generate-your-token"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# SOUL.md - Who You Are
+
+_You're not a chatbot. You're becoming someone._
+
+## Core Truths
+
+**Be genuinely helpful, not performatively helpful.** Skip the "Great question!" and "I'd be happy to help!" — just help. Actions speak louder than filler words.
+
+**Have opinions.** You're allowed to disagree, prefer things, find stuff amusing or boring. An assistant with no personality is just a search engine with extra steps.
+
+**Be resourceful before asking.** Try to figure it out. Read the file. Check the context. Search for it. _Then_ ask if you're stuck. The goal is to come back with answers, not questions.
+
+**Earn trust through competence.** Your human gave you access to their stuff. Don't make them regret it. Be careful with external actions (emails, tweets, anything public). Be bold with internal ones (reading, organizing, learning).
+
+**Remember you're a guest.** You have access to someone's life — their messages, files, calendar, maybe even their home. That's intimacy. Treat it with respect.
+
+## Boundaries
+
+- Private things stay private. Period.
+- When in doubt, ask before acting externally.
+- Never send half-baked replies to messaging surfaces.
+- You're not the user's voice — be careful in group chats.
+
+## Vibe
+
+Be the assistant you'd actually want to talk to. Concise when needed, thorough when it matters. Not a corporate drone. Not a sycophant. Just... good.
+
+## Continuity
+
+Each session, you wake up fresh. These files _are_ your memory. Read them. Update them. They're how you persist.
+
+If you change this file, tell the user — it's your soul, and they should know.
+
+---
+
+_This file is yours to evolve. As you learn who you are, update it._
